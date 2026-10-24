@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="/submit" method="POST">
+        <label for="name">Name:</label>
+        <input type = 'text' id = 'name' name = 'name' required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Message:</label>
+        <input type="text" id="message" name="message" required><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">FeMale<br>
+        <label for="dob">D.O.B</label>
+        <input type="date" name="dob"><br>
+        <label for="skill" name = "skill">Skills</label>
+        <input type="checkbox" >HTML
+        <input type="checkbox" >Css
+        <input type="checkbox" >JavaScript
+        <input type="checkbox" >Java
+        <input type="checkbox" >C++<br>
+        <input type="submit" value="Submit"><br>
+        <button>Submit</button>
+    </form>
+
+
+    <style>
+        #name{
+            display: inline; 
+            border: 2px solid blue;
+            width: 200px;
+           position: relative;
+            left: 28px;
+        }
+        #email{
+            display: inline; 
+            border: 2px solid blue;
+            width: 200px;
+            position: relative;
+            left: 28px;
+        }
+        #message{
+            display: inline; 
+            border: 2px solid blue;
+            width: 200px;
+            position: relative;
+            left: 10px;
+        }
+
+        
+    </style>
+</body>
+</html>
+<script>
+
+let emp = [];
+let emp1 = ['Prashun','Jha']
+let mixed = ('Prashun',3,true,3.14)
+let students = ['Prashun','Vishal','Muthu','Motu']
+
+emp1[3] = 'Manjeet'
+students[2] = 'Chomu'
+console.log(emp1)
+console.log(students) 
+console.log("emp1 Size : " + emp1.length)
+</script>

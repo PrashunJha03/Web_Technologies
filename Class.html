@@ -1,0 +1,38 @@
+<p>This is a <b>CLASS</b> in JavaScript</p>
+
+<script>
+
+    class auto{
+        constructor(name,country)
+        {
+            this.name = name
+            this.country = country
+        }
+
+        showInfo()
+        {
+            return this.name + "," + this.country
+        }
+    }
+
+    let myAuto = new auto ("Maruti","India")
+    document.write(myAuto.showInfo() + "<br>")
+
+
+    class car extends auto{
+        constructor(name,country,model)
+        {
+            super(name,country)
+            this.model = model
+        }
+
+        showInfo()
+        {
+            return this.name+","+this.country+","+this.model
+        }
+    }
+
+    let myCar = new car ("Kia","South Korea","Sorento")
+    document.write(myCar.showInfo())
+
+</script>

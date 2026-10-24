@@ -1,0 +1,25 @@
+<p>This is <b>DATE</b> creation in JavaScript.</p>
+
+
+<script> 
+    now = new Date() //Getting Current date
+    document.write(now + "<br>")
+    document.write("Year : "+now.getFullYear()+ "<br>")
+    document.write("Month : "+now.getMonth()+ "<br>")
+
+
+    const olddate = new Date (2026,2,31,12,35,23) //Setting Date manually
+    document.write(olddate +"<br>")
+
+
+    let diff = now - olddate //getting diff bet dates in milliseconds
+    document.write("Difference in milliseconds : " + diff +"<br>")
+
+    let diff1 = (now - olddate) / (1000*60*60*24)       //getting diff bet dates in days
+    document.write("Difference in days : " + diff1+"<br>")
+
+    let diff2 = Math.floor((now - olddate) / (1000*60*60*24))   //getting diff bet dates in round digit days
+    document.write("Difference in perfect round days : " + diff2+"<br>")
+
+
+</script>

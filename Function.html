@@ -1,0 +1,28 @@
+<p>This is a <b>FUNCTION </b>in JavaScript</p>
+
+<script>
+    function add(a,b)
+    {
+        let c = a+b
+        return c
+    }
+    console.log (add(2,5))
+
+    let exp = function(a,b)
+    {
+        return a**b
+    }
+    console.log(exp(2,5))
+
+    let multiply = (a,b) => {return a*b}
+    console.log(multiply(2,5))
+
+    let divide = (a,b) => a/b
+    console.log(divide(10,5))
+
+    function multiplier(multiplicationFactor)
+    {
+        let fn = (num) => num * multiplicationFactor
+        return fn
+    }
+</script>

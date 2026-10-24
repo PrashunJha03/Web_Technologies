@@ -1,0 +1,46 @@
+<p>This is a <b>OBJECT</b> creation in JavaScript.</p>
+
+<script>
+    let obj = {
+        name : "Prashun",
+        mobile : [878,927],
+        address : {
+            city : "BLR",
+            pin : 560100,
+            state : "KA"
+        },
+        education : [
+            {
+                primary : "STS"
+            },
+            {
+                secondary : "CPS"
+            },
+            {
+                degree : "B.Tech"
+            }
+        ]
+    }
+
+    console.log(obj)
+    obj.designation = 'CDAC'
+    obj['lastName'] = 'Jha'
+    console.log(obj)
+
+
+    document.write(obj.name+ "<br>")
+    document.write(obj.mobile + "<br>")
+    document.write(obj.address.city + "<br>")
+    document.write(obj.education[2].degree + "<br>")
+
+
+    let obj1 = {
+        name : "Prashun Jha",
+        age : 24,
+        batch : "aug26",
+        course : "AC"
+    }
+    for (key in obj1)
+    document.write(obj1[key] + "<br>")
+    document.write(key + ":" + obj1[key] + "<br>") 
+</script>
